@@ -1,0 +1,63 @@
+/* background de la calculadora*/
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #222750cc, #474b39b6);
+    border: black, 20rem;
+}
+
+
+/* display de lo que se muentra en la calculadora*/
+.calculadora-grilla {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+
+/*botones de la calculadora*/
+.calculadora-grilla > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+
+/* display de entrada y salida de la calculadora*/
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+
+/* resultado de la calculadora*/
+.output .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+
+/* botones de la calculadora*/
+.calculadora-grilla > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+/*experimento de prueba*/
+.rectangulo{
+    width: 200px;
+    height: 100px;
+    background: red;
+}
